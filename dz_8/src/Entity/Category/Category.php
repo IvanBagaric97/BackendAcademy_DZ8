@@ -7,6 +7,11 @@ use \App\Entity\AbstractPrimaryEntity;
 use App\Entity\Sport\Sport;
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * Class Category
+ * @ORM\Entity()
+ * @package App\Entity\Category
+ */
 class Category extends AbstractPrimaryEntity
 {
     /**
@@ -22,7 +27,7 @@ class Category extends AbstractPrimaryEntity
     protected string $slug;
 
     /**
-     * @ORM\OneToMany(targetEntity=Sport::class)
+     * @ORM\OneToMany(targetEntity=Sport::class, mappedBy="id")
      * @var int
      */
     protected int $sport_id;
