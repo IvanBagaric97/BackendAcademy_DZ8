@@ -30,7 +30,7 @@ class Category extends AbstractPrimaryEntity
      * @ORM\OneToMany(targetEntity=Sport::class, mappedBy="id")
      * @var int
      */
-    protected int $sport_id;
+    protected Sport $sport;
 
     /**
      * @return string
@@ -65,19 +65,19 @@ class Category extends AbstractPrimaryEntity
     }
 
     /**
-     * @return int
+     * @return Sport
      */
-    public function getSportId(): int
+    public function getSport(): Sport
     {
-        return $this->sport_id;
+        return $this->sport;
     }
 
     /**
-     * @param int $sport_id
+     * @param Sport $sport
      */
-    public function setSportId(int $sport_id): void
+    public function setSportId(Sport $sport): void
     {
-        $this->sport_id = $sport_id;
+        $this->sport = $sport;
     }
 
 }

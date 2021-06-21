@@ -65,5 +65,147 @@ class StandingsRow extends AbstractPrimaryEntity
      */
     protected ?int $percentage;
 
+    /**
+     * @return Competitor
+     */
+    public function getCompetitor(): Competitor
+    {
+        return $this->competitor;
+    }
 
+    /**
+     * @param Competitor $competitor
+     */
+    public function setCompetitor(Competitor $competitor): void
+    {
+        $this->competitor = $competitor;
+    }
+
+    /**
+     * @return Standings
+     */
+    public function getStandings(): Standings
+    {
+        return $this->standings;
+    }
+
+    /**
+     * @param Standings $standings
+     */
+    public function setStandings(Standings $standings): void
+    {
+        $this->standings = $standings;
+    }
+
+    /**
+     * @return int
+     */
+    public function getMatches(): int
+    {
+        return $this->matches;
+    }
+
+    /**
+     * @param int $matches
+     */
+    public function setMatches(int $matches): void
+    {
+        $this->matches = $matches;
+    }
+
+    /**
+     * @return int
+     */
+    public function getWins(): int
+    {
+        return $this->wins;
+    }
+
+    /**
+     * @param int $wins
+     */
+    public function setWins(int $wins): void
+    {
+        $this->wins = $wins;
+    }
+
+    /**
+     * @return int
+     */
+    public function getLoses(): int
+    {
+        return $this->loses;
+    }
+
+    /**
+     * @param int $loses
+     */
+    public function setLoses(int $loses): void
+    {
+        $this->loses = $loses;
+    }
+
+    /**
+     * @return int
+     */
+    public function getScoresAgainst(): int
+    {
+        return $this->scoresAgainst;
+    }
+
+    /**
+     * @param int $scoresAgainst
+     */
+    public function setScoresAgainst(int $scoresAgainst): void
+    {
+        $this->scoresAgainst = $scoresAgainst;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getDraws(): ?int
+    {
+        return $this->draws;
+    }
+
+    /**
+     * @param int|null $draws
+     */
+    public function setDraws(?int $draws): void
+    {
+        $this->draws = $draws;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getPoints(): ?int
+    {
+        return $this->points;
+    }
+
+    /**
+     * @param int|null $points
+     */
+    public function setPoints(?int $points): void
+    {
+        $this->points = $points;
+    }
+
+    /**
+     * @return int|null
+     */
+    public function getPercentage(): ?int
+    {
+        return $this->percentage;
+    }
+
+    /**
+     * @param int|null $percentage
+     */
+    public function setPercentage(?int $percentage): void
+    {
+        $this->percentage = $percentage;
+    }
 }

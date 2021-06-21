@@ -26,11 +26,6 @@ class Standings extends AbstractPrimaryEntity
      */
     protected string $type;
 
-    public function __construct()
-    {
-        $this->season = new Season();
-    }
-
     /**
      * @return Season
      */

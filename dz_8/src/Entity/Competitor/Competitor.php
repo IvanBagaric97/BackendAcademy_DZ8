@@ -1,12 +1,13 @@
 <?php
 
 
-namespace App\Entity;
+namespace App\Entity\Competitor;
 
 
 use App\Entity\Sport\Sport;
 use App\Entity\Country\Country;
 use Doctrine\ORM\Mapping as ORM;
+use \App\Entity\AbstractPrimaryEntity;
 
 /**
  * Class Competitor

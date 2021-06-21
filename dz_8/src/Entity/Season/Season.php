@@ -39,11 +39,6 @@ class Season extends AbstractPrimaryEntity
      */
     protected Competition $competition;
 
-    public function __construct()
-    {
-        $this->competition = new Competition();
-    }
-
     /**
      * @return string
      */

@@ -37,6 +37,28 @@ class BasketballScore
     protected ?int $period4;
 
     /**
+     * @ORM\Column(type="integer")
+     * @var int|null
+     */
+    protected ?int $overtime;
+
+    /**
+     * @return int|null
+     */
+    public function getOvertime(): ?int
+    {
+        return $this->overtime;
+    }
+
+    /**
+     * @param int|null $overtime
+     */
+    public function setOvertime(?int $overtime): void
+    {
+        $this->overtime = $overtime;
+    }
+
+    /**
      * @return int|null
      */
     public function getPeriod1(): ?int

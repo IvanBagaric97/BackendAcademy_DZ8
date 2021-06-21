@@ -23,12 +23,6 @@ class FootballScore
      * @ORM\Column(type="integer")
      * @var int|null
      */
-    protected ?int $overtime;
-
-    /**
-     * @ORM\Column(type="integer")
-     * @var int|null
-     */
     protected ?int $final;
 
     /**
@@ -50,22 +44,6 @@ class FootballScore
     /**
      * @return int|null
      */
-    public function getOvertime(): ?int
-    {
-        return $this->overtime;
-    }
-
-    /**
-     * @param int|null $overtime
-     */
-    public function setOvertime(?int $overtime): void
-    {
-        $this->overtime = $overtime;
-    }
-
-    /**
-     * @return int|null
-     */
     public function getFinal(): ?int
     {
         return $this->final;
@@ -78,6 +56,5 @@ class FootballScore
     {
         $this->final = $final;
     }
-
 
 }

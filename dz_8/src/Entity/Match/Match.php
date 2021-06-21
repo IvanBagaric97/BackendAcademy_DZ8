@@ -5,8 +5,8 @@ namespace App\Entity\Match;
 
 use \App\Entity\AbstractPrimaryEntity;
 use App\Entity\Competition\Competition;
+use App\Entity\Competitor\Competitor;
 use App\Repository\Match\MatchRepository;
-use App\Entity\Competitor;
 use App\Entity\Season\Season;
 use DateTime;
 use Doctrine\ORM\Mapping as ORM;
