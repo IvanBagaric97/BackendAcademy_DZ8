@@ -7,6 +7,11 @@ namespace App\Entity\Match;
 use App\Entity\Score\BasketballScore;
 use Doctrine\ORM\Mapping as ORM;
 
+/**
+ * Class Basketball
+ * @ORM\Entity()
+ * @package App\Entity\Match
+ */
 class Basketball extends Match
 {
     /**

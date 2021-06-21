@@ -11,7 +11,7 @@ use Doctrine\ORM\Mapping as ORM;
  * @ORM\Embeddable()
  * @package App\Entity\Score
  */
-class FootballScore extends AbstractPrimaryEntity
+class FootballScore
 {
     /**
      * @ORM\Column(type="integer")
